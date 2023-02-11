@@ -323,7 +323,7 @@ border-radius: 0px 0px 4px 4px;
         align-items: center;
 }
 .card-content-item :is(:hover, :focus){
-    background-color: #31D0AA;
+    background-color:#404BBF;
 }
 
 
@@ -430,7 +430,6 @@ max-width: 264px;
 }
 
 .footer-list {
-    max-width: 208px;
     display: flex;
         justify-content: center;
         gap: 16px;
@@ -510,15 +509,23 @@ color: #FFFFFF;
         
 /* ==================== project-card ====================*/
 
-.project-card-flex{
+.project-card{
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
 }
-/* .card-item:not(:last-child) {
-    margin-right: 24px;
-} */
+
+.card-link{
+    display: block;
+    box-shadow: 0px 1px 6px rgba(46 47 66 / 8%);
+}
+.card-link :hover,
+.card-link :focus{
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .card-title{
     font-style: normal;
         font-weight: 500;
@@ -526,31 +533,19 @@ color: #FFFFFF;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2E2F42;
-       padding: 32px 16px 0px;
         margin-bottom: 8px;
 }
 .card-text{
-
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
-        padding: 0px 16px 32px;
 }
 .card-content-portfolio{
-    border: 1px solid #E7E9FC;
-    border-top: none;
+    padding: 16px 32px;
+    border-right: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
+    border-left: 1px solid #E7E9FC;
 }
-.card-item{
-    /* cursor: pointer; */
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-
-.card-content-portfolio :hover{
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-0px 1px 1px rgba(46, 47, 66, 0.16),
-0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-/* footer */
 
 /* ============================= /Portfolio ============================= */
